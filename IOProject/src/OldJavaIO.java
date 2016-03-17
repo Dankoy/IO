@@ -6,6 +6,9 @@ import java.io.Reader;
 
 public class OldJavaIO {
 
+	// Without try with resources
+	// Working only if I know that this file contains text
+	
 	public static void main(String[] args) {
 		
 		StringBuffer buff = new StringBuffer();
@@ -17,7 +20,7 @@ public class OldJavaIO {
 			
 			InputStreamReader inpReader = new InputStreamReader(myFile, "UTF8");
 			
-			BufferedReader reader = new BufferedReader(inpReader);
+			Reader reader = new BufferedReader(inpReader);
 			
 			int c = 0;
 			
@@ -30,6 +33,7 @@ public class OldJavaIO {
 		} finally {
 			if (myFile != null) {
 				try {
+					
 					myFile.close();
 				} catch (IOException e1) {
 					e1.getMessage();
