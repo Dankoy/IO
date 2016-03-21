@@ -1,3 +1,5 @@
+package com.evcat.ioinput;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -8,6 +10,7 @@ public class NewJavaIO {
 
 	// With try with resources
 	// Working only if I know that this file contains text
+	// No need to close files and streams in "Finally" block
 	
 	public static void main(String[] args) throws IOException {
 		
