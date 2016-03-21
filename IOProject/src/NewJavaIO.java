@@ -13,7 +13,7 @@ public class NewJavaIO {
 		
 		StringBuffer buff = new StringBuffer();
 		
-		try (FileInputStream myFile = new FileInputStream("/home/evcat/git/IO/IOProject/src/text.txt");
+		try (FileInputStream myFile = new FileInputStream("text.txt");
 				InputStreamReader inpReader = new InputStreamReader(myFile, "UTF8");
 				Reader reader = new BufferedReader(inpReader);) {
 			

@@ -18,7 +18,7 @@ public class OldJavaIO {
 		FileInputStream myFile = null;
 		
 		try {
-			myFile = new FileInputStream("/home/evcat/git/IO/IOProject/src/text.txt");
+			myFile = new FileInputStream("text.txt");
 			
 			InputStreamReader inpReader = new InputStreamReader(myFile, "UTF8");
 			
