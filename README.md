@@ -2,7 +2,7 @@
 Practice Java IO
 And nothing more
 
-Contain two project:
+Contains two project:
 
 1) IOProject - Streams practice
 
