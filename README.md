@@ -1,6 +1,5 @@
 # IO
 Practice Java IO. 
-And nothing more
 
 Contains two project:
 
